@@ -265,11 +265,12 @@ a,
 }
 
 .text {
-  font-size: 15px;
+  font-size: 20px;
   color: var(--primary-color);
 }
 
 .color-words {
+    font-weight: 600;
   color: var(--system-color);
 }
 /* ================================== COMMON END ======================================= */
@@ -336,12 +337,13 @@ a,
 
 /* ================================== HERO START ======================================= */
 .hero {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .slider {
   width: 100%;
   height: 500px;
+  box-shadow: 0 5px 10px 10px hsla(var(--hue), 98%, 52%, 0.3);
 }
 
 .slider img {
@@ -362,4 +364,50 @@ a,
 /* ================================== HERO END ======================================= */
 
 /* ================================== ABOUT START ======================================= */
+.about {
+  background-color: #f5f5f6;
+  padding: 100px 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.about-text > :nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.about-text {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+
+.about-text::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: var(--system-color);
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-links > * {
+  font-size: 18px;
+}
+
+.about-link > li > a:hover {
+  color: var(--system-color);
+  text-decoration: underline;
+}
 /* ================================== ABOUT END ======================================= */
