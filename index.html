@@ -10,14 +10,14 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <title>Kauf Shop</title>
+    <title>Kauf Shop - Б/У и Новый Товар из Европы</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-inf">
-          <a href="#" class="logo"><img src="./img/" alt="Kauf Shop Logo" /></a>
-          <p class="slogan">Магазин Б/У и Новой Техники из Европы</p>
+          <a href="#" class="logo"><img src="./" alt="Kauf Shop Logo" /></a>
+          <p class="slogan">Б/У и Новый Товар из Европы</p>
         </div>
       </div>
       <nav class="navbar">
@@ -32,5 +32,71 @@
         </div>
       </nav>
     </header>
+    <div class="hero">
+      <div class="container">
+        <div class="swiper-container slider" id="slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="slider-link">
+                <img
+                  src="./img/Slider-Image1.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Slider Image One"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="slider-link">
+                <img
+                  src="./img/Slider-Image2.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Slider Image One"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="slider-link">
+                <img
+                  src="./img/Slider-Image2.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  alt="Slider Image One"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="slider-pagination-bullet swiper-pagination"></div>
+          <div class="swiper-button-prev slider-buttons"></div>
+          <div class="swiper-button-next slider-buttons"></div>
+        </div>
+      </div>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const slider = new Swiper("#slider", {
+        loop: true,
+        autoplay: true,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

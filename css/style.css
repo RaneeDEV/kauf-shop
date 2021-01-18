@@ -257,6 +257,21 @@ a,
   max-width: 1040px;
   margin: 0 auto;
 }
+
+.title {
+  font-size: 25px;
+  color: var(--primary-color);
+  margin: 20px 0;
+}
+
+.text {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+.color-words {
+  color: var(--system-color);
+}
 /* ================================== COMMON END ======================================= */
 
 /* ================================== HEADER START ======================================= */
@@ -285,6 +300,7 @@ a,
 .navbar {
   background-color: var(--white);
   color: var(--primary-color);
+  font-weight: 600;
   border-bottom: 1px solid var(--secondary-color);
 }
 
@@ -317,3 +333,33 @@ a,
   transition: 0.25s;
 }
 /* ================================== HEADER END ======================================= */
+
+/* ================================== HERO START ======================================= */
+.hero {
+  padding: 100px 0;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+}
+
+.slider-buttons {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.slider:hover > .slider-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+/* ================================== HERO END ======================================= */
+
+/* ================================== ABOUT START ======================================= */
+/* ================================== ABOUT END ======================================= */
