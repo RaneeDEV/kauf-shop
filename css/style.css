@@ -543,7 +543,6 @@ h1 {
 .slider2 {
   width: 100%;
   height: 120px;
-
 }
 
 .brands-slide > a > img {
@@ -552,11 +551,85 @@ h1 {
   object-fit: cover;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.brands-slide > a > img:hover{
+.brands-slide > a > img:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
 /* ================================== BRANDS END ======================================= */
+
+/* ================================== FOOTER START ======================================= */
+.footer {
+  padding: 70px 0;
+  background-color: var(--secondary-color);
+}
+
+.footer > .container {
+  color: var(--white);
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-nav-wrap a {
+  transition: 0.25s;
+}
+
+.footer-nav-wrap a:hover {
+  color: var(--primary-color);
+}
+
+.footer-nav-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.social-box-list {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.social-box-list > :nth-child(n + 2) {
+  margin-top: 12px;
+}
+
+.social-box-icons,
+.footer-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav-links > :nth-child(n + 2) {
+  margin-left: 50px;
+}
+
+.social-box-icons > li > a {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.social-box-icons > :nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.footer-nav-links a {
+  margin-bottom: 15px;
+}
+
+.footer-slogan {
+  margin-top: 30px;
+  font-size: 12px;
+}
+/* ================================== FOOTER END ======================================= */
