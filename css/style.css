@@ -429,7 +429,7 @@ h1 {
 }
 /* ================================== ABOUT END ======================================= */
 
-/* ================================== information START ======================================= */
+/* ================================== INFORMATION START ======================================= */
 .information {
   padding: 75px 0;
 }
@@ -500,4 +500,34 @@ h1 {
 .information-box4 {
   background: url("../img/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px;
 }
-/* ================================== information END ======================================= */
+/* ================================== INFORMATION END ======================================= */
+
+/* ================================== LOCATE END ======================================= */
+.locate {
+  padding: 100px 0;
+  background-color: var(--lightnes-gray);
+}
+
+.locate > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.locate-inf > :nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.locate-inf a:hover {
+  text-decoration: underline;
+}
+
+.location-icon {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.map {
+  box-shadow: var(--primary-color-shadow);
+}
+/* ================================== LOCATE END ======================================= */
