@@ -220,6 +220,111 @@
         ></iframe>
       </div>
     </div>
+    <div class="brands">
+      <div class="container">
+        <div class="swiper-container slider2" id="slider2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/delonghi-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Delonghi"
+                  alt="delonghi-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/saeco-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Saeco"
+                  alt="saeco-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/philips-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Philips"
+                  alt="philips-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/krups-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Krups"
+                  alt="krups-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/siemens-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Siemens"
+                  alt="siemens-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/bosch-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Bosch"
+                  alt="bosch-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/melitta-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Melitta"
+                  alt="melitta-logo"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide brands-slide">
+              <a href="#">
+                <img
+                  src="./img/jura-logo.webp"
+                  width="1"
+                  height="1"
+                  load="lazy"
+                  title="Jura"
+                  alt="jura-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -241,6 +346,24 @@
           clickable: true,
         },
       });
+
+      const slider2 = new Swiper("#slider2", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        loop: true,
+        slidesPerView: 5,
+        autoplay: true,
+        speed: 700,
+      });
+      
     </script>
   </body>
 </html>
