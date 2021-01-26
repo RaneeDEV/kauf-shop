@@ -231,7 +231,7 @@ table {
 body {
   font-family: "Montserrat", var(--system-fonts), sans-serif;
   color: var(--secondary-color);
-  background-color: var(--white);
+  background: url('../img/background.webp');
 }
 
 a,
@@ -246,11 +246,11 @@ a,
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --hue: 216;
-  --primary-color: hsl(var(--hue), 98%, 52%);
+  --hue: 35;
+  --primary-color: hsl(var(--hue), 98%, 48%);
   --secondary-color: hsl(calc(var(--hue) - 216), 0%, 20%);
   --gray: hsl(calc(var(--hue) - 216), 0%, 80%);
-  --lightnes-gray: hsl(calc(var(--hue) + 24), 5%, 96%);
+  --caramel: hsla(calc(var(--hue) - 6), 100%, 97%);
   --white: #fff;
   --success: #08af2c;
   --danger: #dc3545;
@@ -298,7 +298,9 @@ a,
 
 .header-inf,
 .navbar,
-.nav {
+.nav,
+.header-info,
+.socials {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -310,6 +312,20 @@ a,
   object-fit: cover;
 }
 
+.socials > :nth-child(n + 1) {
+  margin-left: 20px;
+}
+
+.socials a {
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.socials a:hover {
+  transform: rotate(360deg) scale(1.5);
+  color: var(--primary-color);
+}
+
 .slogan {
   font-style: italic;
   font-size: 14px;
@@ -318,6 +334,12 @@ a,
 .navbar {
   background-color: var(--white);
   border-bottom: 1px solid var(--gray);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav a {
@@ -373,37 +395,39 @@ a,
 
 /* ================================== HERO START ======================================= */
 .hero {
-  padding: 75px 0;
+  width: 100%;
+}
+/* ================================== HERO END ======================================= */
+
+/* ================================== BRANDS START ======================================= */
+.brands {
+  padding: 100px 0;
 }
 
 .slider {
   width: 100%;
-  height: 500px;
-  box-shadow: var(--primary-color-shadow);
+  height: 120px;
 }
 
-.slider img {
-  width: 100%;
-  height: 500px;
+.brands-slide > a > img {
+  width: 170px;
+  height: 70px;
   object-fit: cover;
-}
-
-.slider-buttons {
-  opacity: 0;
-  visibility: hidden;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   transition: 0.3s;
 }
 
-.slider:hover > .slider-buttons {
-  opacity: 1;
-  visibility: visible;
+.brands-slide > a > img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
-/* ================================== HERO END ======================================= */
+/* ================================== BRANDS END ======================================= */
 
 /* ================================== ABOUT START ======================================= */
 .about {
   padding: 100px 0;
-  background-color: var(--lightnes-gray);
+  background-color: var(--caramel);
 }
 
 h1 {
@@ -490,11 +514,11 @@ h1 {
 }
 
 .information-box1 {
-  background: url("../img/box.webp") no-repeat 97% 97% / 57px 60px;
+  background: url("../img/box.webp") no-repeat 97% 97% / 57px 60px, var(--white);
 }
 
 .information-box2 {
-  background: url("../img/car.webp") no-repeat 97% 97% / 60px 60px;
+  background: url("../img/car.webp") no-repeat 97% 97% / 60px 60px, var(--white);
 }
 
 .information-list > li::before {
@@ -510,7 +534,7 @@ h1 {
 }
 
 .information-box3 {
-  background: url("../img/stars.webp") no-repeat 97% 97% / 60px 60px;
+  background: url("../img/stars.webp") no-repeat 97% 97% / 60px 60px, var(--white);
 }
 
 .information-list2 > li::before {
@@ -519,14 +543,14 @@ h1 {
 }
 
 .information-box4 {
-  background: url("../img/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px;
+  background: url("../img/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px, var(--white);
 }
 /* ================================== INFORMATION END ======================================= */
 
 /* ================================== LOCATE END ======================================= */
 .locate {
   padding: 100px 0;
-  background-color: var(--lightnes-gray);
+  background: var(--caramel);
 }
 
 .locate > .container {
@@ -554,31 +578,6 @@ h1 {
   box-shadow: var(--primary-color-shadow);
 }
 /* ================================== LOCATE END ======================================= */
-
-/* ================================== BRANDS START ======================================= */
-.brands {
-  padding: 120px 0;
-}
-
-.slider2 {
-  width: 100%;
-  height: 120px;
-}
-
-.brands-slide > a > img {
-  width: 170px;
-  height: 70px;
-  object-fit: cover;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: 0.3s;
-}
-
-.brands-slide > a > img:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-}
-/* ================================== BRANDS END ======================================= */
 
 /* ================================== FOOTER START ======================================= */
 .footer {
@@ -644,6 +643,14 @@ h1 {
   margin-left: 20px;
 }
 
+.social-box-icons > li > a{
+  transition: 0.7s;
+}
+
+.social-box-icons > li > a:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
 .footer-nav-links a {
   margin-bottom: 15px;
 }
@@ -669,6 +676,7 @@ h1 {
 .product-card {
   width: 320px;
   border: 1px solid var(--gray);
+  background-color: var(--white);
   border-radius: 5px;
   padding: 20px;
   text-align: center;
