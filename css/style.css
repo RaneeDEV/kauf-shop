@@ -626,7 +626,7 @@ h1 {
 .social-box-icons,
 .footer-nav-links {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
