@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link
+      rel="preload"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      as="style"
+      crossorigin="anonymous"
+    />
+    <link rel="preload" href="./css/style.css" as="style" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Kauf Shop</title>
-    <meta name="description" content="Б/У и Новый Товар из Европы" />
+    <meta name="description" content="Интернет Магазин Б/У и Нового Товара из Европы" />
   </head>
   <body>
     <header class="header">
@@ -26,11 +33,11 @@
               alt="Kauf Shop Logo"
           /></a>
           <div class="header-info">
-            <p class="slogan">Б/У и Новый Товар из Европы</p>
             <ul class="socials">
               <li>
                 <a
                   href="https://instagram.com/i_love_coffe_dnepr?igshid=19rp8gxedikn9"
+                  rel="noopener noreferrer nofollow"
                   title="Instagram"
                   target="_blank"
                   ><i class="fab fa-instagram"></i
@@ -39,25 +46,35 @@
               <li>
                 <a
                   href="https://m.facebook.com/kauf.coffee"
+                  rel="noopener noreferrer nofollow"
                   title="Facebook"
                   target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
               <li>
-                <a href="viber://chat?number=%2B80666645678" title="Viber"
-                target="_blank"
+                <a
+                  href="viber://chat?number=%2B80666645678"
+                  rel="noopener noreferrer nofollow"
+                  title="Viber"
+                  target="_blank"
                   ><i class="fab fa-viber"></i
                 ></a>
               </li>
               <li>
-                <a href="https://telegram.me/kauf_shop_dp" title="Telegram"
-                target="_blank"
+                <a
+                  href="https://telegram.me/kauf_shop_dp"
+                  rel="noopener noreferrer nofollow"
+                  title="Telegram"
+                  target="_blank"
                   ><i class="fab fa-telegram-plane"></i
                 ></a>
               </li>
               <li>
-                <a href="mailto:techexpert.dnepr@gmail.com" title="Gmail"
+                <a
+                  href="mailto:techexpert.dnepr@gmail.com"
+                  rel="noopener noreferrer nofollow"
+                  title="Gmail"
                   ><i class="far fa-envelope"></i
                 ></a>
               </li>
@@ -84,11 +101,19 @@
         </ul>
       </div>
     </nav>
-    <video src="./video/coffee-banner.mp4" muted autoplay loop class="hero">
+    <div class="hero">
+      <video
+        src="./video/coffee-banner.mp4"
+        muted
+        autoplay
+        loop
+        class="hero-video"
+      ></video>
       <div class="container">
-        <h1>kauf_shop_dp</h1>
+        <h1>Kauf Shop</h1>
+        <p class="hero-text text">Интернет Магазин Б/У и Нового Товара из Европы</p>
       </div>
-    </video>
+    </div>
     <div class="brands">
       <div class="container">
         <div class="swiper-container slider" id="slider">
@@ -196,10 +221,10 @@
     </div>
     <div class="about">
       <div class="container">
-        <h1>
+        <h2 class="about-title">
           Качественный Товар из Европы только в
           <span class="color-words">Kauf Shop!</span>
-        </h1>
+        </h2>
         <div class="about-text">
           <p class="text">
             Наш сайт специализируется по кофемашинам а так же различных товарах
@@ -217,22 +242,40 @@
         </div>
         <div class="about-links">
           <ul class="about-link">
-            <li><a href="tel:+380-066-664-5678">Позвонить</a></li>
+            <li>
+              <a
+                href="tel:+380-066-664-5678"
+                title="Звонок на мобильный"
+                >Позвонить</a
+              >
+            </li>
             <li>
               Написать в
-              <a href="viber://chat?number=%2B80666645678" target="_blank"
+              <a
+                href="viber://chat?number=%2B80666645678"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                title="Личное сообщение Viber"
                 ><span class="color-words">Viber</span></a
               >
             </li>
             <li>
               Написать в
-              <a href="https://telegram.me/kauf_shop_dp" target="_blank"
+              <a
+                href="https://telegram.me/kauf_shop_dp"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                title="Личное сообщение Telegram"
                 ><span class="color-words">Telegram</span></a
               >
             </li>
             <li>
               Написать на
-              <a href="mailto:techexpert.dnepr@gmail.com" target="_blank"
+              <a
+                href="mailto:techexpert.dnepr@gmail.com"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                title="Личное сообщение Gmail"
                 ><span class="color-words">Email</span></a
               >
             </li>
@@ -242,7 +285,7 @@
     </div>
     <div class="information">
       <div class="container">
-        <h2 class="title">Почему именно мы?</h2>
+        <h2 class="information-title title">Почему именно мы?</h2>
         <div class="information-wrap">
           <div class="information-box information-box3">
             <div class="information-box-inf">
@@ -269,7 +312,7 @@
             </div>
           </div>
         </div>
-        <h2 class="title">Доставка и Оплата</h2>
+        <h2 class="information-title title">Доставка и Оплата</h2>
         <div class="information-wrap">
           <div class="information-box information-box1">
             <div class="information-box-inf">
@@ -311,7 +354,11 @@
             <i class="fas fa-map-marker-alt location-icon"></i>Мы находимся в г.
             Днепр по адрессу
             <span class="color-words"
-              ><a href="https://goo.gl/maps/9rDKyxm2m4swDLYW9" target="_blank"
+              ><a
+                href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
+                rel="noopener noreferrer nofollow"
+                title="Найти адресс в Google Maps"
+                target="_blank"
                 >пр.Гагарина д. 74</a
               ></span
             >
@@ -327,10 +374,10 @@
           aria-hidden="false"
           tabindex="0"
           class="map"
+          title="Найти адресс в Google Maps"
         ></iframe>
       </div>
     </div>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-nav-wrap">
@@ -346,6 +393,7 @@
               <li>
                 <a
                   href="https://m.facebook.com/kauf.coffee"
+                  rel="noopener noreferrer nofollow"
                   title="Facebook"
                   target="_blank"
                   ><i class="fab fa-facebook-f"></i
@@ -354,6 +402,7 @@
               <li>
                 <a
                   href="https://instagram.com/i_love_coffe_dnepr?igshid=19rp8gxedikn9"
+                  rel="noopener noreferrer nofollow"
                   title="Instagram"
                   target="_blank"
                   ><i class="fab fa-instagram"></i
@@ -361,7 +410,8 @@
               </li>
               <li>
                 <a
-                  href="viber://chat?number=%2B80666645678"                  
+                  href="viber://chat?number=%2B80666645678"
+                  rel="noopener noreferrer nofollow"
                   title="Viber"
                   target="_blank"
                   ><i class="fab fa-viber"></i
@@ -370,13 +420,17 @@
               <li>
                 <a
                   href="https://telegram.me/kauf_shop_dp"
+                  rel="noopener noreferrer nofollow"
                   title="Telegram"
                   target="_blank"
                   ><i class="fab fa-telegram-plane"></i
                 ></a>
               </li>
               <li>
-                <a href="mailto:techexpert.dnepr@gmail.com" title="Gmail"
+                <a
+                  href="mailto:techexpert.dnepr@gmail.com"
+                  rel="noopener noreferrer nofollow"
+                  title="Gmail"
                   ><i class="far fa-envelope"></i
                 ></a>
               </li>
@@ -406,7 +460,11 @@
             </h2>
             <ul class="footer-text">
               <li>
-                <a href="https://goo.gl/maps/9rDKyxm2m4swDLYW9" target="_blank"
+                <a
+                  href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
+                  rel="noopener noreferrer nofollow"
+                  title="Найти адресс в Google Maps"
+                  target="_blank"
                   >г. Днепр - пр.Гагарина д. 74</a
                 >
               </li>
@@ -418,6 +476,12 @@
         </p>
       </div>
     </footer>
+    <link
+      rel="preload"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      as="style"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
