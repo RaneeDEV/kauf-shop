@@ -519,9 +519,14 @@
           nextEl: ".swiper-button-next",
         },
         loop: true,
-        slidesPerView: 5,
+        slidesPerView: 3,
         autoplay: true,
         speed: 700,
+        breakpoints: {
+          575: {
+            slidesPerView: 5,
+          },
+        },
       });
       const burgerBtn = document.getElementById("burgerBtn");
       const burgerMenu = document.getElementById("burgerMenu");
