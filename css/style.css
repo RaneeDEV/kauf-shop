@@ -249,6 +249,7 @@ a,
   --primary-color: hsl(var(--hue), 100%, 53%);
   --secondary-color: hsl(calc(var(--hue) - 216), 0%, 20%);
   --gray: hsl(calc(var(--hue) - 216), 0%, 80%);
+  --dark-gray: #888888;
   --caramel: hsla(calc(var(--hue) - 6), 100%, 93%);
   --white: #fff;
   --success: #08af2c;
@@ -800,7 +801,7 @@ h1 {
   justify-content: space-between;
 }
 
-.product-buy{
+.product-buy {
   margin-bottom: 30px;
 }
 
@@ -874,10 +875,6 @@ h1 {
   transition: 0.25s;
 }
 
-.product-inf {
-  width: 50%;
-}
-
 .product-list {
   display: flex;
   align-items: center;
@@ -885,9 +882,19 @@ h1 {
 }
 
 .product-list-label {
-  width: 65%;
-  color: #888888;
+  width: 35%;
+  color: var(--dark-gray);
   font-weight: 700;
+}
+
+.nothing {
+  margin: 350px 0;
+}
+
+.nothing-title,
+.nothing-text {
+  text-align: center;
+  color: var(--dark-gray);
 }
 /* // XX-Large devices (larger desktops) */
 /* // No media query since the xxl breakpoint has no upper bound on its width */
@@ -904,6 +911,15 @@ h1 {
   }
   .information-box {
     width: 460px;
+  }
+  .delivery-inf > :nth-child(n + 2) {
+    margin-left: 7px;
+  }
+  .product-list-label {
+    width: 50%;
+  }
+  .logo img{
+    width: 100%;
   }
 }
 /* // Medium devices (tablets, less than 992px) */
@@ -929,6 +945,9 @@ h1 {
   }
   .footer-nav-wrap {
     flex-wrap: wrap;
+  }
+  .product-slider {
+    width: 100%;
   }
 }
 /* // Small devices (landscape phones, less than 768px) */
@@ -1014,6 +1033,7 @@ h1 {
   .footer-nav-wrap {
     justify-content: space-evenly;
   }
+  
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -1054,6 +1074,26 @@ h1 {
   }
   .footer-nav-wrap {
     text-align: center;
+  }
+  .product-buy {
+    flex-direction: column;
+  }
+  .product-buy-inf {
+    margin-left: 0;
+    width: 100%;
+  }
+  .product-title {
+    font-size: 20px;
+  }
+  .product-buy-inf {
+    text-align: center;
+  }
+  .delivery-inf {
+    flex-direction: column;
+  }
+  .product-list-label,
+  .product-list-value {
+    font-size: 14px;
   }
 }
 /* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
