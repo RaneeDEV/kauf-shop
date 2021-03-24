@@ -163,15 +163,16 @@
              Кофемашина - Delonghi <span class="color-words">Primadonna Deluxe</span>
             </h1>
             <p class="card-availability">Есть в наличии</p>
-            <h2 class="product-price">12 400₴</h2>
+            <h2 class="product-price">12 800₴</h2>
             <a
-              href="./data/PrimaDonna S De Luxe 28.465.M.pdf"
+              href="./instructions/PrimaDonna S De Luxe 28.465.M.pdf"
               class="pdf-link"
               target="_blank"
+              title="Скачать в PDF"
               ><i class="fas fa-file-pdf"></i>Скачать Инструкцию PDF</a
             >
             <br />
-            <button class="button buy-btn">Купить</button>
+            <button class="button buy-btn" title="Оформить заказ">Купить</button>
             <div class="delivery-inf">
               <div class="delivery">
                 <h3 class="delivery-title"><i class="fas fa-truck"></i>Доставка</h3>
@@ -185,11 +186,12 @@
               <div class="delivery">
                 <h3 class="delivery-title"><i class="fas fa-people-carry"></i>Самовывоз</h3>
                 <p class="delivery-text">
-                    Самовывоз в г. Днепр по предварительному звонку!!! (адресс <a
-                    href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
-                    rel="noopener noreferrer nofollow"
-                    title="Просмотреть адресс в Google Maps"
-                    target="_blank">пр.Гагарина д. 74)</a>
+                  Самовывоз в г. Днепр по предварительному звонку!!! 
+                  (адресс <a
+                   href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
+                   rel="noopener noreferrer nofollow"
+                   title="Просмотреть адресс в Google Maps"
+                   target="_blank">пр.Гагарина д. 74)</a>
                 </p>
               </div>
             </div>
@@ -338,6 +340,8 @@
         </p>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
+    <a href="#" class="to-top" id="toTopLink"><i class="fas fa-chevron-up"></i></a>
     <link
       rel="preload"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -356,16 +360,6 @@
           prevEl: ".swiper-button-prev",
         },
         loop: true,
-      });
-      const burgerBtn = document.getElementById("burgerBtn");
-      const burgerMenu = document.getElementById("burgerMenu");
-
-      burgerBtn.addEventListener("click", (event) => {
-        document.body.classList.toggle("burger-open");
-      });
-      window.addEventListener("load", (event) => {
-        burgerMenu.classList.add("burger-menu-transition");
-        mapIframe.src = mapIframe.dataset.src;
       });
     </script>
   </body>
