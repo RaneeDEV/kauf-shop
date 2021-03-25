@@ -1,0 +1,1008 @@
+/* ================================== FONT'S START ======================================= */
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* ================================== FONT'S END ======================================= */
+
+/* ================================== CSS RESET START ======================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ================================== CSS RESET END ======================================= */
+
+/* ================================== COMMON START ======================================= */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", var(--system-fonts), sans-serif;
+  color: var(--secondary-color);
+}
+
+a,
+::after,
+::before {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --hue: 35;
+  --primary-color: hsl(var(--hue), 100%, 53%);
+  --secondary-color: hsl(calc(var(--hue) - 216), 0%, 20%);
+  --gray: hsl(calc(var(--hue) - 216), 0%, 80%);
+  --dark-gray: #888888;
+  --caramel: hsla(calc(var(--hue) - 6), 100%, 93%);
+  --white: #fff;
+  --success: #08af2c;
+  --danger: #dc3545;
+  --shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.2);
+  --primary-color-shadow: 0 2px 10px 7px hsla(var(--hue), 28%, 52%, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+}
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: var(--white);
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  margin: 20px 0;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+}
+
+.color-words {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1000;
+  transform: scale(0);
+}
+
+.to-top.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  transform: scale(1);
+}
+
+.to-top:hover {
+  opacity: 0.7;
+}
+/* ================================== COMMON END ======================================= */
+
+/* ================================== HEADER START ======================================= */
+.header {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.header-inf > .container,
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-header {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-btn {
+  position: relative;
+  z-index: 9999;
+}
+
+.logo img,
+.footer-title img {
+  width: 220px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.socials > :nth-child(n + 1) {
+  margin-left: 20px;
+}
+
+.socials a {
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.socials a:hover {
+  transform: rotate(360deg) scale(1.5);
+  color: var(--primary-color);
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  padding: 20px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.nav > li > a {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+.nav > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--primary-color);
+  transition: 0.3s;
+}
+
+.nav > li > a:hover::before {
+  width: 100%;
+}
+
+.active > a {
+  position: relative;
+  color: var(--primary-color);
+}
+
+.active > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.nav > li.active > a:hover::before {
+  width: 0;
+}
+/* ================================== HEADER END ======================================= */
+
+/* ================================== HERO START ======================================= */
+.hero {
+  padding: 250px 0;
+  position: relative;
+  z-index: 0;
+  background-color: var(--caramel);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%));
+}
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: var(--white);
+}
+
+.hero-text {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+/* ================================== HERO END ======================================= */
+
+/* ================================== BRANDS START ======================================= */
+.brands {
+  padding: 100px 0;
+}
+
+.slider {
+  width: 100%;
+  height: 120px;
+}
+
+.brands-slide > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.slider .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+.brands-slide > a > img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+/* ================================== BRANDS END ======================================= */
+
+/* ================================== ABOUT START ======================================= */
+.about {
+  padding: 100px 0;
+  background-color: var(--caramel);
+}
+
+.about-title {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.about-text > :nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.about-text {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+
+.about-text::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+.about-links > * {
+  font-size: 18px;
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-link > li > a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+/* ================================== ABOUT END ======================================= */
+
+/* ================================== INFORMATION START ======================================= */
+.information {
+  padding: 75px 0;
+}
+
+.information-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.information-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.information-box {
+  width: 500px;
+  min-height: 300px;
+  padding: 20px 30px 50px 30px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.information-box-inf > :nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.information-box-inf > :nth-child(1) {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.information-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.information-box1 {
+  background: url("../img/box.webp") no-repeat 97% 97% / 57px 60px, var(--white);
+}
+
+.information-box2 {
+  background: url("../img/car.webp") no-repeat 97% 97% / 60px 60px, var(--white);
+}
+
+.information-list > li::before {
+  width: 40px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.information-list1 > li::before {
+  content: "\2713";
+  color: var(--success);
+}
+
+.information-box3 {
+  background: url("../img/stars.webp") no-repeat 97% 97% / 60px 60px,
+    var(--white);
+}
+
+.information-list2 > li::before {
+  content: "\2717";
+  color: var(--danger);
+}
+
+.information-box4 {
+  background: url("../img/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px,
+    var(--white);
+}
+/* ================================== INFORMATION END ======================================= */
+
+/* ================================== LOCATE END ======================================= */
+.locate {
+  padding: 100px 0;
+  background: var(--caramel);
+}
+
+.locate > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+
+.locate-inf {
+  margin-bottom: 50px;
+}
+
+.locate-inf a:hover {
+  text-decoration: underline;
+}
+
+.location-icon {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.map {
+  box-shadow: var(--primary-color-shadow);
+}
+/* ================================== LOCATE END ======================================= */
+
+/* ================================== FOOTER START ======================================= */
+.footer {
+  padding: 70px 0;
+  background-color: var(--secondary-color);
+}
+
+.footer > .container {
+  color: var(--white);
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-nav-wrap a {
+  transition: 0.25s;
+}
+
+.footer-nav-wrap a:hover {
+  color: var(--primary-color);
+}
+
+.footer-nav-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.social-box-list {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.social-box-list > :nth-child(n + 2) {
+  margin-top: 12px;
+}
+
+.social-box-icons,
+.footer-nav-links {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-nav-links > :nth-child(n + 2) {
+  margin-left: 50px;
+}
+
+.social-box-icons > li > a {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.social-box-icons > :nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.social-box-icons > li > a {
+  transition: 0.7s;
+}
+
+.social-box-icons > li > a:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.footer-nav-links a {
+  margin-bottom: 15px;
+}
+
+.footer-slogan {
+  margin-top: 30px;
+  font-size: 12px;
+}
+/* ================================== FOOTER END ======================================= */
+
+/* ================================== ANOTHER PAGE START ======================================= */
+.nothing {
+  margin: 350px 0;
+}
+
+.nothing-title,
+.nothing-text {
+  text-align: center;
+  color: var(--dark-gray);
+}
+/* ================================== ANOTHER PAGE END ======================================= */
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  .about-title {
+    font-size: 29px;
+  }
+  .information-box {
+    width: 460px;
+  }
+  .delivery-inf > :nth-child(n + 2) {
+    margin-left: 7px;
+  }
+  .product-list-label {
+    width: 50%;
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav a {
+    padding: 14px;
+    font-size: 15px;
+  }
+  .about-title {
+    font-size: 22px;
+  }
+  .information-title {
+    text-align: center;
+  }
+  .information-box {
+    width: 100%;
+  }
+  .information-wrap {
+    justify-content: center;
+  }
+  .footer-nav-wrap {
+    flex-wrap: wrap;
+  }
+  .product-slider {
+    width: 100%;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .mobile-header {
+    display: flex;
+  }
+  .burger-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    transform: translateX(100%);
+  }
+  .burger-menu-transition {
+    transition: 0.3s;
+  }
+  .burger-menu > .header-inf > .container {
+    flex-direction: column;
+  }
+  .header-info > .socials {
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+  .burger-menu {
+    flex-direction: column;
+  }
+  .burger-menu .nav {
+    flex-direction: column;
+  }
+  .burger-menu .nav a {
+    color: var(--white);
+  }
+  .burger-menu .navbar {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .burger-open {
+    overflow: hidden;
+  }
+  .burger-open .burger-menu {
+    transform: translateX(0);
+  }
+  h1,
+  .hero-text {
+    text-align: center;
+  }
+  .about-title {
+    text-align: center;
+  }
+  .about-p {
+    font-size: 17px;
+  }
+  .about-link {
+    flex-wrap: wrap;
+  }
+  .about-link > :nth-child(n + 1) {
+    margin-bottom: 10px;
+  }
+  .inf-text {
+    font-size: 18px;
+  }
+  .footer-nav-wrap > :nth-child(n + 1) {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .footer-slogan {
+    text-align: center;
+  }
+  .footer-nav-wrap {
+    justify-content: space-evenly;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 150px 0;
+  }
+  .brands {
+    padding: 65px 0;
+  }
+  .about,
+  .information,
+  .locate {
+    padding: 50px 0;
+  }
+  .about-link {
+    justify-content: center;
+  }
+  .about-link > :nth-child(n + 1) {
+    margin-left: 15px;
+  }
+  .information-box {
+    padding: 10px 12px 50px 12px;
+  }
+  .inf-text {
+    font-size: 17px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .locate-text {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer-nav-wrap {
+    text-align: center;
+  }
+  .product-buy {
+    flex-direction: column;
+  }
+  .product-buy-inf {
+    margin-left: 0;
+    width: 100%;
+  }
+  .product-title {
+    font-size: 20px;
+  }
+  .product-buy-inf {
+    text-align: center;
+  }
+  .delivery-inf {
+    flex-direction: column;
+  }
+  .product-list-label,
+  .product-list-value {
+    font-size: 14px;
+  }
+}
+/* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
+@media (max-width: 320px) {
+  .hero {
+    padding: 100px 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .subtitle,
+  .title {
+    text-align: center;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+  .about-link > :nth-child(n + 2) {
+    margin-left: 0px;
+  }
+  .information-box {
+    padding: 10px 20px 70px 20px;
+  }
+  .inf-text {
+    font-size: 14px;
+  }
+}
