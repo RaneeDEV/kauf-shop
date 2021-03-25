@@ -309,6 +309,22 @@ h1 {
   font-weight: 600;
   color: var(--primary-color);
 }
+
+.button {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
 /* ================================== COMMON END ======================================= */
 
 /* ================================== HEADER START ======================================= */
@@ -424,7 +440,7 @@ h1 {
 /* ================================== HEADER END ======================================= */
 
 /* ================================== PRODUCT BUY START ======================================= */
-.product-buy,
+.product,
 .delivery-inf {
   display: flex;
   justify-content: space-between;
@@ -436,16 +452,16 @@ h1 {
   color: var(--secondary-color);
 }
 
-.products  {
-  margin: 100px 0;
+.product-page-wrap  {
+  padding: 100px 0;
 }
 
-.product-buy-inf {
+.product-page-inf {
   margin-left: 35px;
   width: 50%;
 }
 
-.product-buy-inf > :nth-child(n + 2) {
+.product-page-inf > :nth-child(n + 2) {
   margin-bottom: 25px;
 }
 
@@ -465,7 +481,7 @@ h1 {
   opacity: .8;
 }
 
-.product-price {
+.product-page-price {
   font-weight: 700;
   font-size: 32px;
 }
@@ -474,6 +490,11 @@ h1 {
 .delivery i {
   margin-right: 10px;
   font-size: 18px;
+}
+
+.product-page-availability{
+  color: var(--success);
+  font-size: 14px;
 }
 
 .pdf-link {
@@ -530,7 +551,7 @@ h1 {
   transition: 0.25s;
 }
 
-.product-list {
+.product-list>div {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -676,6 +697,14 @@ h1 {
   .product-slider {
     width: 100%;
   }
+  .product-page-inf, .delivery-inf{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .pdf-link{
+    margin: 0 auto;
+  }
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -759,6 +788,17 @@ h1 {
   }
   .footer-nav-wrap {
     justify-content: space-evenly;
+  }
+  .product{
+    flex-direction: column;
+  }
+  .product-page-inf{
+    margin-left: 0;
+    width: 100%;
+  }
+  .to-top{
+    bottom: 30px;
+    right: 40px;
   }
 }
 /* // X-Small devices (portrait phones, less than 576px) */

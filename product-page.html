@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./css/product-card.css" as="style" />
+    <link rel="preload" href="./css/product-page.css" as="style" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -11,10 +10,13 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/product-card.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Ассортимент DeLonghi</title>
-    <meta name="description" content="Интернет Магазин Б/У и Нового Товара из Европы" />
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/product-page.css" />
+    <title>Delonghi Primadonna Deluxe</title>
+    <meta
+      name="description"
+      content="Интернет Магазин Б/У и Нового Товара из Европы"
+    />
   </head>
   <body>
     <header class="header">
@@ -101,7 +103,7 @@
           <div class="container">
             <ul class="nav">
               <li><a href="saeco-philips.html">Saeco - Philips</a></li>
-              <li class="active"><a href="delonghi.html">DeLonghi</a></li>
+              <li><a href="product-cards-page.html">DeLonghi</a></li>
               <li><a href="coffee.html">Кофе</a></li>
               <li><a href="chemist.html">Химия</a></li>
               <li><a href="spares.html">Запчасти</a></li>
@@ -111,129 +113,130 @@
         </nav>
       </div>
     </header>
-    <div class="products">
+    <div class="product-page-wrap">
       <div class="container">
-        <h1 class="product-title">Delonghi</h1>
-        <div class="product-card-wrap">
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <a href="primadel.html"><button class="button">Подробнее</button></a>
+        <div class="product">
+          <div class="swiper-container product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-slide">
+                <img
+                  src="./img/delonghi-primadonna-s.webp"
+                  alt="product image"
+                />
+              </div>
+              <div class="swiper-slide product-slide">
+                <img
+                  src="./img/delonghi-primadonna-s.webp"
+                  alt="product image"
+                />
+              </div>
+              <div class="swiper-slide product-slide">
+                <img
+                  src="./img/delonghi-primadonna-s.webp"
+                  alt="product image"
+                />
+              </div>
+              <div class="swiper-slide product-slide">
+                <img
+                  src="./img/delonghi-primadonna-s.webp"
+                  alt="product image"
+                />
+              </div>
+              <div class="swiper-slide product-slide">
+                <img
+                  src="./img/delonghi-primadonna-s.webp"
+                  alt="product image"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
           </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
-          </div>
-          <div class="product-card">
-            <img
-              src="./img/delonghi-primadonna-s.webp"
-              alt="Delonghi PrimaDonna S"
-            />
-            <h2 class="card-subtitle">
-              Кофемашина -
-              <span class="color-words">Delonghi PrimaDonna S</span>
-            </h2>
-            <h3 class="card-price">12 800₴</h3>
-            <p class="card-availability">Есть в наличии</p>
-            <button class="button">Подробнее</button>
+          <div class="product-page-inf">
+            <h1 class="product-title">
+             Кофемашина - Delonghi <span class="color-words">Primadonna Deluxe</span>
+            </h1>
+            <p class="product-page-availability">Есть в наличии</p>
+            <h2 class="product-page-price">12 800₴</h2>
+            <a
+              href="./instructions/PrimaDonna S De Luxe 28.465.M.pdf"
+              class="pdf-link"
+              target="_blank"
+              title="Скачать в PDF"
+              ><i class="fas fa-file-pdf"></i>Скачать Инструкцию PDF</a
+            >
+            <br />
+            <button class="buy-btn" title="Оформить заказ">Купить</button>
+            <div class="delivery-inf">
+              <div class="delivery">
+                <h3 class="delivery-title"><i class="fas fa-truck"></i>Доставка</h3>
+                <p class="delivery-text">
+                  Отправки по территории Украины с помощью услуг
+                  новой почты. 
+                  <p class="delivery-text">Предоплата в размере доставки в обе стороны,
+                    остальное наложенным платежом.</p>
+                </p>
+              </div>
+              <div class="delivery">
+                <h3 class="delivery-title"><i class="fas fa-people-carry"></i>Самовывоз</h3>
+                <p class="delivery-text">
+                  Самовывоз в г. Днепр по предварительному звонку!!! 
+                  (адресс <a
+                   href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
+                   rel="noopener noreferrer nofollow"
+                   title="Просмотреть адресс в Google Maps"
+                   target="_blank">пр.Гагарина д. 74)</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="product-inf">
+            <h2 class="title">Характеристики</h2>      
+            <dl class="product-list">
+            <div>
+              <dt class="product-list-label">Тип:</dt>
+              <dd class="product-list-value">Кофемашина</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Производитель:</dt>
+              <dd class="product-list-value">DeLonghi</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Материал корпуса:</dt>
+              <dd class="product-list-value">Метал</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Цвет:</dt>
+              <dd class="product-list-value">Серебристый</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Объем резервуара для воды:</dt>
+              <dd class="product-list-value">2л</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Емкость контейнера для зерен:</dt>
+              <dd class="product-list-value">400г</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Габариты:</dt>
+              <dd class="product-list-value">40 х 50 х 20</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Управление:</dt>
+              <dd class="product-list-value">Сенсорная панель</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Наличие молочника:</dt>
+              <dd class="product-list-value">Да</dd>
+            </div>
+            <div>
+              <dt class="product-list-label">Гарантия:</dt>
+              <dd class="product-list-value">1 Месяц</dd> 
+            </div>
+          </dl>  
       </div>
+    </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -300,7 +303,7 @@
             <div class="footer-nav-links">
               <ul class="footer-text footer-nav-link">
                 <li><a href="saeco-philips.html">Saeco - Philips</a></li>
-                <li><a href="delonghi.html">Delonghi</a></li>
+                <li><a href="product-cards-page.html">Delonghi</a></li>
                 <li><a href="coffee.html">Кофе</a></li>
                 <li><a href="chemist.html">Химия</a></li>
               </ul>
@@ -333,7 +336,11 @@
         </p>
       </div>
     </footer>
-    <a href="#" class="to-top" id="toTopLink"><i class="fas fa-chevron-up"></i></a>
-    <script src="./js/app.js"></script>    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

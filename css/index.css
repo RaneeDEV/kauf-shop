@@ -339,6 +339,22 @@ h1 {
 .to-top:hover {
   opacity: 0.7;
 }
+
+.button {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
 /* ================================== COMMON END ======================================= */
 
 /* ================================== HEADER START ======================================= */
@@ -798,12 +814,6 @@ h1 {
   .information-box {
     width: 460px;
   }
-  .delivery-inf > :nth-child(n + 2) {
-    margin-left: 7px;
-  }
-  .product-list-label {
-    width: 50%;
-  }
   .logo img {
     width: 100%;
   }
@@ -919,6 +929,10 @@ h1 {
   .footer-nav-wrap {
     justify-content: space-evenly;
   }
+  .to-top{
+    bottom: 30px;
+    right: 40px;
+  }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -959,26 +973,6 @@ h1 {
   }
   .footer-nav-wrap {
     text-align: center;
-  }
-  .product-buy {
-    flex-direction: column;
-  }
-  .product-buy-inf {
-    margin-left: 0;
-    width: 100%;
-  }
-  .product-title {
-    font-size: 20px;
-  }
-  .product-buy-inf {
-    text-align: center;
-  }
-  .delivery-inf {
-    flex-direction: column;
-  }
-  .product-list-label,
-  .product-list-value {
-    font-size: 14px;
   }
 }
 /* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
