@@ -488,37 +488,14 @@
         </p>
       </div>
     </footer>
+    <a href="#" class="to-top" id="toTopLink"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      const slider = new Swiper("#slider", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
-        },
-        loop: true,
-        slidesPerView: 3,
-        autoplay: true,
-        speed: 700,
-        breakpoints: {
-          575: {
-            slidesPerView: 5,
-          },
-        },
-      });
-    </script>
-    <a href="#" class="to-top" id="toTopLink" style="display: none"
-      ><i class="fas fa-chevron-up"></i
-    ></a>
     <script src="./js/app.js"></script>
   </body>
 </html>
