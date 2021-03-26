@@ -603,6 +603,7 @@ h1 {
   }
   .product-slider {
     width: 100%;
+    height: 100%;
   }
   .product-page-inf, .delivery-inf{
     display: flex;
