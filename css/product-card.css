@@ -1,6 +1,7 @@
 /* ================================== PRODUCT'S START ======================================= */
 .products {
   padding: 70px 0;
+  min-height: 100vh;
 }
 
 .product-card-wrap {
@@ -21,7 +22,7 @@
   width: 320px;
   border: 1px solid var(--gray);
   background-color: var(--white);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 20px;
   text-align: center;
   transition: 0.25s;
@@ -35,7 +36,6 @@
 .product-card > img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
   object-fit: cover;
 }
 
@@ -49,9 +49,16 @@
   font-weight: 600;
 }
 
-.card-availability {
-  font-size: 12px;
+.availability::after{
+  content: "Есть в наличии";
+  font-size: 13px;
   color: var(--success);
+}
+
+.unavailability::after{
+  content: "Нет в наличии";
+  font-size: 13px;
+  color: var(--danger); 
 }
 
 .button {
@@ -72,6 +79,6 @@
 
 .product-card:hover {
   box-shadow: var(--shadow);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 /* ================================== PRODUCT'S END ======================================= */
