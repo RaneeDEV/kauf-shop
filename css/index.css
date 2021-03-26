@@ -167,11 +167,11 @@ h1 {
 }
 
 .information-box1 {
-  background: url("../img/box.webp") no-repeat 97% 97% / 57px 60px, var(--white);
+  background: url("../img/index/box.webp") no-repeat 97% 97% / 57px 60px, var(--white);
 }
 
 .information-box2 {
-  background: url("../img/car.webp") no-repeat 97% 97% / 60px 60px, var(--white);
+  background: url("../img/index/car.webp") no-repeat 97% 97% / 60px 60px, var(--white);
 }
 
 .information-list > li::before {
@@ -187,7 +187,7 @@ h1 {
 }
 
 .information-box3 {
-  background: url("../img/stars.webp") no-repeat 97% 97% / 60px 60px,
+  background: url("../img/index/stars.webp") no-repeat 97% 97% / 60px 60px,
     var(--white);
 }
 
@@ -197,7 +197,7 @@ h1 {
 }
 
 .information-box4 {
-  background: url("../img/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px,
+  background: url("../img/index/not-to-do-emoji.webp") no-repeat 97% 97% / 60px 60px,
     var(--white);
 }
 /* ================================== INFORMATION END ======================================= */
