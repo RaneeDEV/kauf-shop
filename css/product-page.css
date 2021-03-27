@@ -117,6 +117,14 @@
   transition: 0.25s;
 }
 
+.product-inf>:nth-child(n+2){
+  margin-bottom: 20px;
+}
+
+.product-desc{
+  width: 75%;
+}
+
 .product-list>div {
   display: flex;
   align-items: center;

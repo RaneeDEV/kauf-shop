@@ -717,6 +717,9 @@ h1 {
   .product-card-wrap{
     justify-content: space-evenly;
   }
+  .product-desc{
+    width: 100%;
+  }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -781,6 +784,9 @@ h1 {
   .product-card{
     width: 290px;
     padding: 5px;
+  }
+  .product-desc{
+    font-size: 16px;
   }
 }
 /* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 321px) */
