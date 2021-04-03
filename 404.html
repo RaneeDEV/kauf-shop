@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link rel="preload" href="./css/common.css" as="style" />
+    <link rel="preload" href="./css/404.css" as="style" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/404.css" />
+    <title>Сторінку не знайдено · KaufShop</title>
+    <meta
+      name="description"
+      content="Некоректна адреса або видалена сторінка"
+    />
+  </head>
+  <body>
+    <div class="p404">
+      <div class="container">
+        <div class="p404-wrap">
+          <h1 class="p404-title">Здається, такої сторінки не існує :(</h1>
+          <div class="p404-text-wrap">
+            <p class="p404-text">
+              Можливо ви ввели некоректну адресу або сторінка була видалена.
+            </p>
+            <p class="p404-text">
+              Перевірте, чи правильно ви ввели адресу та спробуйте ще раз :)
+            </p>
+          </div>
+          <div class="moving-img" id="parallaxScene">
+            <img
+              src="./img/404.png"
+              alt="404 Image"
+              width="1"
+              height="1"
+              loading="lazy"
+              data-depth="0.4"
+            />
+          </div>
+          <a href="/index.html" class="link-404"
+            ><button class="btn-404" title="Повернутися на головну сторінку">
+              На головну сторінку
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="./js/404.js"></script>
+  </body>
+</html>

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <link rel="preload" href="./css/common.css" as="style" />
     <link rel="preload" href="./css/index.css" as="style" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
     <title>Kauf Shop</title>
     <meta
       name="description"
@@ -24,7 +24,7 @@
       <div class="container mobile-header">
         <a href="/" class="logo"
           ><img
-            src="././img/./brands/"
+            src="./img/logo.webp"
             width="1"
             height="1"
             load="lazy"
@@ -92,7 +92,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="tel:+380-066-664-5678" title="Позвонить"
+                  <a href="tel:+380-066-664-5678" title="Подзвонити"
                     ><i class="fas fa-mobile-alt"></i
                   ></a>
                 </li>
@@ -102,13 +102,12 @@
         </div>
         <nav class="navbar">
           <div class="container">
-            <ul class="nav">
-              <li><a href="saeco-philips.html">Saeco - Philips</a></li>
-              <li><a href="product-cards-page.html">DeLonghi</a></li>
-              <li><a href="coffee.html">Кофе</a></li>
-              <li><a href="chemist.html">Химия</a></li>
-              <li><a href="spares.html">Запчасти</a></li>
-              <li><a href="other.html">Другое</a></li>
+            <ul class="nav" id="mainNav">
+              <li><a href="products.html#SaecoPhilips">Saeco - Philips</a></li>
+              <li><a href="products.html#DeLonghi">DeLonghi</a></li>
+              <li><a href="CoffeeCards.html">Кава</a></li>
+              <li><a href="ChemistryCards.html">Хімія</a></li>
+              <li><a href="Instructions.html">Інструкції</a></li>
             </ul>
           </div>
         </nav>
@@ -125,13 +124,13 @@
       <div class="container">
         <h1>Kauf Shop</h1>
         <p class="hero-text text">
-          Интернет Магазин Б/У и Нового Товара из Европы
+          Інтернет Магазин Б/У і Нового Товару з Європи
         </p>
       </div>
     </div>
     <div class="brands">
       <div class="container">
-        <div class="swiper-container slider" id="slider">
+        <div class="swiper-container brands-slider" id="slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide brands-slide">
               <a href="product-cards-page.html">
@@ -146,7 +145,7 @@
               </a>
             </div>
             <div class="swiper-slide brands-slide">
-              <a href="saeco-philips">
+              <a href="SaecoPhilips.html">
                 <img
                   src="./img/brands/saeco-logo.webp"
                   width="1"
@@ -166,18 +165,6 @@
                   load="lazy"
                   title="Philips"
                   alt="philips-logo"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide brands-slide">
-              <a href="spares.html">
-                <img
-                  src="./img/brands/krups-logo.webp"
-                  width="1"
-                  height="1"
-                  load="lazy"
-                  title="Krups"
-                  alt="krups-logo"
                 />
               </a>
             </div>
@@ -237,33 +224,33 @@
     <div class="about">
       <div class="container">
         <h2 class="about-title">
-          Качественный Товар из Европы только в
+          Якісний Товар з Європи тільки в
           <span class="color-words">Kauf Shop!</span>
         </h2>
         <div class="about-text">
           <p class="text about-p">
-            Наш сайт специализируется по кофемашинам а так же различных товарах
-            со всей Европы!
+            Наш сайт спеціалізується по кавових а так само різних товарах з
+            усієї Європи!
           </p>
           <p class="text about-p">
-            Весь товар прошёл полное техническое обслуживание в специально
-            отведенных сервисных центрах. У новых проведена диагностика, а у Б/У
-            необходимый ремонт и заменена запчастей согласно диагнистики.
+            Весь товар пройшов повне технічне обслуговування в спеціально
+            відведених сервісних центрах. У нових проведена діагностика, а у Б /
+            У необхідний ремонт і замінена запчастин згідно діагністікі.
           </p>
           <p class="text about-p">
-            Если вы здесь, значит вам точно что-то приглянулось! Для дальнейшей
-            информации контактируйте ниже ...
+            Якщо ви тут, значить вам точно щось сподобалося! для подальшої
+            інформації контактуйте нижче ...
           </p>
         </div>
         <div class="about-links">
           <ul class="about-link">
             <li>
               <a href="tel:+380-066-664-5678" title="Звонок на мобильный"
-                >Позвонить</a
+                >Подзвонити</a
               >
             </li>
             <li>
-              Написать в
+              Написати в
               <a
                 href="viber://chat?number=%2B80666645678"
                 rel="noopener noreferrer nofollow"
@@ -273,7 +260,7 @@
               >
             </li>
             <li>
-              Написать в
+              Написати в
               <a
                 href="https://telegram.me/kauf_shop_dp"
                 rel="noopener noreferrer nofollow"
@@ -283,7 +270,7 @@
               >
             </li>
             <li>
-              Написать на
+              Написати на
               <a
                 href="mailto:techexpert.dnepr@gmail.com"
                 rel="noopener noreferrer nofollow"
@@ -298,59 +285,60 @@
     </div>
     <div class="information">
       <div class="container">
-        <h2 class="information-title title">Почему именно мы?</h2>
+        <h2 class="information-title title">Чому саме ми?</h2>
         <div class="information-wrap">
           <div class="information-box information-box3">
             <div class="information-box-inf">
-              <h3 class="subtitle">Мы предоставляем ..</h3>
+              <h3 class="subtitle">Ми надаємо ..</h3>
               <ul class="information-list information-list1 text inf-text">
-                <li>Месяц Гарантии</li>
-                <li>Приемлемые Цены</li>
-                <li>Качество Товара</li>
-                <li>Разновидность Товара</li>
-                <li>Консультация 24/7</li>
+                <li>Місяць Гарантії</li>
+                <li>Прийнятні ціни</li>
+                <li>Якість товару</li>
+                <li>Різновид Товару</li>
+                <li>Консультація 24/7</li>
               </ul>
             </div>
           </div>
           <div class="information-box information-box4">
             <div class="information-box-inf">
-              <h3 class="subtitle">Не можем предоставить :(</h3>
+              <h3 class="subtitle">Чого не можемо надати :(</h3>
               <ul class="information-list information-list2 text inf-text">
-                <li>Пожизненная Гарантия</li>
+                <li>Довічна Гарантія</li>
                 <li>Кредит</li>
-                <li>Бартер или Займ</li>
-                <li>Аренда</li>
-                <li>Рассрочка</li>
+                <li>Бартер або Позика</li>
+                <li>Оренда</li>
+                <li>Розстрочка</li>
               </ul>
             </div>
           </div>
         </div>
-        <h2 class="information-title title">Доставка и Оплата</h2>
+        <h2 class="information-title title">Доставка і оплата</h2>
         <div class="information-wrap">
           <div class="information-box information-box1">
             <div class="information-box-inf">
-              <h3 class="subtitle">Новая почта</h3>
+              <h3 class="subtitle">Нова Пошта</h3>
               <p class="text inf-text">
-                Отправки осуществляем по территории Украины с помощью услуг
-                новой почты. Заказанный товар отправляется только по предоплате.
+                Відправки здійснюємо по території України за допомогою послуг
+                нової пошти. Замовлений товар відправляється тільки по
+                передоплаті.
               </p>
               <p class="text inf-text">
-                Предоплата в размере доставки в обе стороны, остальное
-                наложенным платежом.
+                Передоплата в розмірі доставки в обидві сторони, решта
+                післяплатою.
               </p>
             </div>
           </div>
           <div class="information-box information-box2">
             <div class="information-box-inf">
-              <h3 class="subtitle">Самовывоз</h3>
+              <h3 class="subtitle">Самовивіз</h3>
               <p class="text inf-text">
-                Если вы находитесь в г. Днепр, то товар можно забрать
-                самостоятельно со склада.
+                Якщо ви перебуваєте в м Дніпро, то товар можна забрати
+                самостійно зі складу.
               </p>
               <p class="text inf-text">
-                Предварительно договоримся о встрече. На месте вы сможете
-                посмотреть на весь ассортимент, выбрать то что нравится,
-                протестировать и купить.
+                Попередньо домовимося про зустріч. На місці ви зможете
+                подивитися на весь асортимент, вибрати те що подобається,
+                протестувати і придбати.
               </p>
             </div>
           </div>
@@ -361,16 +349,16 @@
       <div class="container">
         <div class="locate-inf">
           <h2 class="title">
-            Где мы <span class="color-words">находимся?</span>
+            Де ми <span class="color-words">знаходимося?</span>
           </h2>
           <p class="text locate-text">
-            <i class="fas fa-map-marker-alt location-icon"></i>Мы находимся в г.
-            Днепр по адрессу
+            <i class="fas fa-map-marker-alt location-icon"></i>Ми знаходімося в
+            м. Дніпро за адресою
             <span class="color-words"
               ><a
                 href="https://goo.gl/maps/9rDKyxm2m4swDLYW9"
                 rel="noopener noreferrer nofollow"
-                title="Найти адресс в Google Maps"
+                title="Знайти адресу в Google Maps"
                 target="_blank"
                 >пр.Гагарина д. 74</a
               ></span
@@ -388,7 +376,7 @@
           aria-hidden="false"
           tabindex="0"
           class="map"
-          title="Просмотреть адресс в Google Maps"
+          title="Подивитися адресу в Google Maps"
         ></iframe>
       </div>
     </div>
@@ -397,7 +385,7 @@
         <div class="footer-nav-wrap">
           <div class="social-box">
             <h2 class="footer-nav-title footer-title">
-              <span class="color-words">Контакты</span>
+              <span class="color-words">Контакти</span>
             </h2>
             <ul class="social-box-list">
               <li><a href="tel:+380-066-664-5678">066-664-5678</a></li>
@@ -456,15 +444,13 @@
             </h2>
             <div class="footer-nav-links">
               <ul class="footer-text footer-nav-link">
-                <li><a href="saeco-philips.html">Saeco - Philips</a></li>
-                <li><a href="product-cards-page.html">Delonghi</a></li>
-                <li><a href="coffee.html">Кофе</a></li>
-                <li><a href="chemist.html">Химия</a></li>
+                <li><a href="products.html#SaecoPhilips">Saeco - Philips</a></li>
+                <li><a href="products.html#DeLonghi">DeLonghi</a></li>
+                <li><a href="CoffeeCards.html">Кава</a></li>
+                <li><a href="ChemistryCards.html">Хімія</a></li>
               </ul>
               <ul class="footer-text footer-nav-link">
-                <li><a href="accessories.html">Аксессуары</a></li>
-                <li><a href="spares.html">Запчасти</a></li>
-                <li><a href="other.html">Другое</a></li>
+                <li><a href="Instructions.html">Інструкції</a></li>
               </ul>
             </div>
           </div>
@@ -479,14 +465,15 @@
                   rel="noopener noreferrer nofollow"
                   title="Просмотреть адресс в Google Maps"
                   target="_blank"
-                  >г. Днепр - пр.Гагарина д. 74</a
+                  >м. Дніпро - пр.Гагарина д. 74</a
                 >
               </li>
             </ul>
           </div>
         </div>
         <p class="footer-text footer-slogan">
-          © Kauf Shop 2021 - Б/У и Новый Товар из Европы
+          © Kauf Shop <span id="copyRightYear">2021</span> - Б/У і Новий Товар з
+          Європи
         </p>
       </div>
     </footer>
@@ -498,6 +485,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
